@@ -14,5 +14,6 @@ void main(){
 				fprintf(q," %d ",i);
 			}
 		}
+		printf("your even or odd file is succesfully opened");
 	}
 }
