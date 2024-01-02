@@ -7,14 +7,19 @@ Even numbers from even_file.txt:
 
 Odd numbers from odd_file.txt:
 51, 53, 55, 57, 59, 61, 63, 65, 67, 69
+*/
 
-	*/
 #include<stdio.h>
+
 void main(){
 	int i;
-	FILE *p=fopen("EVEN.txt","w");
-	FILE *q=fopen("ODD.txt","w");
+	FILE *p;
+	FILE *q;
+	
+	p = fopen("EVEN.txt","w");
+	q = fopen("ODD.txt","w");
 	char num[10];
+	
 	if(p==NULL || q==NULL){
 		printf("Can't Open File'");
 	}else{
@@ -25,6 +30,7 @@ void main(){
 				fprintf(q," %d ",i);
 			}
 		}
-		printf("your even or odd file is succesfully opened");
+				printf("your even or odd file is succesfully opened");
+		
 	}
 }
